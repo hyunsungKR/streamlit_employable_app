@@ -48,8 +48,8 @@ df.groupby('CLASS')['GENERAL APPEARANCE'].value_counts()
 ```python
 # 주피터 노트북에서 개발하고 저장한 스케일러와 인공지능 불러오는 과정
 
-scaler_X=joblib.load('scaler_X.pkl')
-classifier = joblib.load('classifier2.pkl')
+scaler_X=joblib.load('scaler_X2.pkl')
+classifier = joblib.load('classifier3.pkl')
 ```
 ```python
 # 고객에게 데이터를 입력받을 때 숫자 0~5로 받지않고, 문자로 받으면 숫자로 변환하는 조건문
