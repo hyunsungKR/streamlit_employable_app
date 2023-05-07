@@ -18,6 +18,18 @@ df=df.drop('Name of Student',axis=1)
 df = df.replace('LessEmployable', 0)
 df = df.replace('Employable', 1)
 
+def score_conversion(score):
+    if score == '매우안좋다':
+        return 1
+    elif score == '안좋다':
+        return 2
+    elif score == '보통이다':
+        return 3
+    elif score == '좋다':
+        return 4
+    elif score == '매우좋다':
+        return 5
+
 def run_ml():
     st.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ2hDyjLKlxs6o6VuayarJJ7V133ht5yZTsQ&usqp=CAU.jpg',width=350)
     if st.button('데이터 보기') :
